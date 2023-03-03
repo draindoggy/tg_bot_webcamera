@@ -1,6 +1,6 @@
 import telebot
 import os
-bot = telebot.TeleBot('6147347905:AAH1mCv39JH1gI8NZucar4F37aA5wIrnzKE')
+bot = telebot.TeleBot('токен')
 @bot.message_handler(commands=['start'])
 def start(message):
     bot.send_message(message.chat.id, text='привет, {0.first_name}!, сейчас ты получишь доступ к своей веб-камере прямо из телеграма!')
